@@ -1,0 +1,23 @@
+<h1>Ads#new</h1>
+<p>Find me in app/views/ads/new.html.erb</p>
+
+<%= form_for :ad, url: ads_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </p>
+  
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
